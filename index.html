@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#315B43">
+<title>新郑传统拔罐｜上门预约</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",
+  "Microsoft YaHei",sans-serif;
+  background:#f5f7f3;
+  color:#26382c;
+  line-height:1.7;
+}
+header{
+  background:#315b43;
+  color:white;
+  padding:18px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{font-size:18px;font-weight:bold}
+.tag{font-size:12px;opacity:.85}
+main{max-width:600px;margin:auto;padding:18px}
+.hero{
+  background:#e6efe5;
+  border-radius:20px;
+  padding:28px 22px;
+  margin-bottom:18px;
+}
+.hero small{color:#55765c}
+h1{font-size:29px;line-height:1.4;margin:12px 0}
+.hero p{color:#526653;font-size:14px}
+.button{
+  display:inline-block;
+  background:#315b43;
+  color:white;
+  text-decoration:none;
+  padding:12px 22px;
+  border-radius:10px;
+  font-size:15px;
+  border:0;
+  cursor:pointer;
+}
+.section{
+  background:white;
+  padding:21px;
+  border-radius:16px;
+  margin-bottom:16px;
+  box-shadow:0 3px 14px rgba(0,0,0,.035);
+}
+h2{font-size:19px;margin:0 0 15px}
+.item{
+  padding:12px 0;
+  border-bottom:1px solid #edf0eb;
+}
+.item:last-child{border:0}
+.label{font-size:13px;color:#78877a}
+.value{font-size:15px;font-weight:600}
+.notice{
+  background:#fff7e8;
+  color:#765b2e;
+  padding:13px;
+  border-radius:10px;
+  font-size:13px;
+}
+form label{
+  display:block;
+  font-size:14px;
+  margin:13px 0 5px;
+  font-weight:600;
+}
+input,select,textarea{
+  width:100%;
+  padding:13px;
+  border:1px solid #dce3da;
+  border-radius:9px;
+  font-size:15px;
+  background:white;
+  color:#26382c;
+}
+textarea{min-height:85px;resize:vertical}
+.submit{width:100%;margin-top:18px}
+footer{
+  text-align:center;
+  color:#879287;
+  font-size:12px;
+  padding:25px 10px 40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">传统拔罐预约</div>
+  <div class="tag">郑州 · 新郑</div>
+</header>
+
+<main>
+
+<section class="hero">
+  <small>新郑本地 · 个人上门服务</small>
+  <h1>传统拔罐<br>上门预约服务</h1>
+  <p>
+    提交预约申请后，由服务提供者人工审核。
+    双方确认服务时间、地点和价格后，再进入付款流程。
+  </p>
+  <a href="#booking" class="button">立即申请预约</a>
+</section>
+
+<section class="section">
+  <h2>服务介绍</h2>
+  <div class="item">
+    <div class="label">服务项目</div>
+    <div class="value">传统拔罐</div>
+  </div>
+  <div class="item">
+    <div class="label">服务区域</div>
+    <div class="value">河南省郑州市新郑市</div>
+  </div>
+  <div class="item">
+    <div class="label">服务方式</div>
+    <div class="value">服务人员上门</div>
+  </div>
+  <div class="item">
+    <div class="label">预约方式</div>
+    <div class="value">消费者申请，人工审核确认</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>预约流程</h2>
+  <div class="item">① 填写个人预约信息</div>
+  <div class="item">② 等待人工审核</div>
+  <div class="item">③ 双方确认订单及价格</div>
+  <div class="item">④ 通过正式支付渠道付款</div>
+  <div class="item">⑤ 按约定时间提供服务</div>
+  <div class="item">⑥ 双方确认服务完成</div>
+</section>
+
+<section class="section" id="booking">
+  <h2>在线预约申请</h2>
+  <p style="font-size:13px;color:#78877a">
+    请填写真实、准确的信息。提交申请不代表预约成功。
+  </p>
+
+  <form id="bookingForm">
+    <label>姓名或称呼 *</label>
+    <input name="name" required placeholder="请输入您的称呼">
+
+    <label>联系电话 *</label>
+    <input name="phone" type="tel" required
+    pattern="[0-9+\-\s]{7,20}" placeholder="请输入联系电话">
+
+    <label>所在区域 *</label>
+    <select name="area" required>
+      <option value="">请选择区域</option>
+      <option>新郑市区</option>
+      <option>龙湖镇</option>
+      <option>薛店镇</option>
+      <option>孟庄镇</option>
+      <option>其他区域</option>
+    </select>
+
+    <label>上门详细地址 *</label>
+    <input name="address" required
+    placeholder="请输入需要上门的地址">
+
+    <label>期望预约日期 *</label>
+    <input name="date" type="date" required>
+
+    <label>期望预约时间 *</label>
+    <select name="time" required>
+      <option value="">请选择时间</option>
+      <option>上午 09:00—12:00</option>
+      <option>下午 13:00—18:00</option>
+      <option>晚上 18:00—21:00</option>
+    </select>
+
+    <label>其他备注（选填）</label>
+    <textarea name="remark"
+    placeholder="可以填写预约方面的其他要求"></textarea>
+
+    <p class="notice">
+      提交前请确认信息准确。预约信息仅用于联系和处理本次服务申请。
+      请勿在备注中填写身份证号码、详细病史等不必要的敏感信息。
+    </p>
+
+    <button class="button submit" type="submit">
+      提交预约申请
+    </button>
+  </form>
+</section>
+
+<section class="section">
+  <h2>服务注意事项</h2>
+  <div class="notice">
+    本页面介绍的是传统拔罐服务信息，不构成医疗诊断或治疗建议。
+    拔罐可能造成皮肤损伤、烫伤等风险。
+    如有身体不适、皮肤破损或其他健康顾虑，
+    请先咨询合格医疗专业人员。
+    不适宜接受服务的情况应提前告知服务提供者。
+  </div>
+</section>
+
+</main>
+
+<footer>
+  新郑传统拔罐预约服务<br>
+  本网站预约申请以人工审核确认为准
+</footer>
+
+<script>
+document.getElementById("bookingForm")
+.addEventListener("submit",function(event){
+  event.preventDefault();
+  alert("这是网站测试页面，预约功能尚未正式开通。请勿提交真实个人信息。");
+});
+</script>
+
+</body>
+</html>
